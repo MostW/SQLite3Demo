@@ -14,6 +14,7 @@
 		8C77D101201888FA00FD7A83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C77D100201888FA00FD7A83 /* Assets.xcassets */; };
 		8C77D104201888FA00FD7A83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C77D102201888FA00FD7A83 /* LaunchScreen.storyboard */; };
 		8C77D107201888FA00FD7A83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C77D106201888FA00FD7A83 /* main.m */; };
+		8C77D110201899A900FD7A83 /* databaseTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C77D10F201899A900FD7A83 /* databaseTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,10 @@
 		8C77D103201888FA00FD7A83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C77D105201888FA00FD7A83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C77D106201888FA00FD7A83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C77D10E201899A900FD7A83 /* databaseTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = databaseTools.h; sourceTree = "<group>"; };
+		8C77D10F201899A900FD7A83 /* databaseTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = databaseTools.m; sourceTree = "<group>"; };
+		8C77D11220189CDE00FD7A83 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		8C77D11420189D1D00FD7A83 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			children = (
 				8C77D0F3201888FA00FD7A83 /* SQLite3Demo */,
 				8C77D0F2201888FA00FD7A83 /* Products */,
+				8C77D11120189CDE00FD7A83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +66,7 @@
 		8C77D0F3201888FA00FD7A83 /* SQLite3Demo */ = {
 			isa = PBXGroup;
 			children = (
+				8C77D10D2018991700FD7A83 /* Tools */,
 				8C77D0F4201888FA00FD7A83 /* AppDelegate.h */,
 				8C77D0F5201888FA00FD7A83 /* AppDelegate.m */,
 				8C77D0F7201888FA00FD7A83 /* ViewController.h */,
@@ -72,6 +79,24 @@
 				8C77D0FD201888FA00FD7A83 /* SQLite3Demo.xcdatamodeld */,
 			);
 			path = SQLite3Demo;
+			sourceTree = "<group>";
+		};
+		8C77D10D2018991700FD7A83 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8C77D10E201899A900FD7A83 /* databaseTools.h */,
+				8C77D10F201899A900FD7A83 /* databaseTools.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8C77D11120189CDE00FD7A83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C77D11420189D1D00FD7A83 /* libsqlite3.tbd */,
+				8C77D11220189CDE00FD7A83 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +173,7 @@
 				8C77D0F9201888FA00FD7A83 /* ViewController.m in Sources */,
 				8C77D0F6201888FA00FD7A83 /* AppDelegate.m in Sources */,
 				8C77D107201888FA00FD7A83 /* main.m in Sources */,
+				8C77D110201899A900FD7A83 /* databaseTools.m in Sources */,
 				8C77D0FF201888FA00FD7A83 /* SQLite3Demo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

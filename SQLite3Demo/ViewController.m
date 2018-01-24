@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "databaseTools.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [[databaseTools shareInstance] createDatabase];
+    
+    [[databaseTools shareInstance] updateWithPnoneNo:@"123" andPWd:@"456"];
+    [[databaseTools shareInstance] updateWithPnoneNo:@"124" andPWd:@"aaa"];
+    [[databaseTools shareInstance] updateWithPnoneNo:@"125" andPWd:@"acd"];
+    
+    [[databaseTools shareInstance] searchWithPhoneNO:@"123"];
+    [[databaseTools shareInstance] searchWithPhoneNO:@"124"];
+    [[databaseTools shareInstance] searchWithPhoneNO:@"125"];
 }
 
 
